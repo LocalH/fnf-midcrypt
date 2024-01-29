@@ -66,14 +66,6 @@ if (len(args) == 0) | (len(opts) == 0):
     print("<file>: input file to encrypt or decrypt")
     quit()
 
-#if sys.argv[1] == "-e":
-#    encrypt = True
-#elif sys.argv[1] == "-d":
-#    encrypt = False
-#else:
-#    print(sys.argv[0],sys.argv[1],sys.argv[2]+": Bad command or file name")
-#    quit()
-
 infile = args[0]
 infilename, infileext = os.path.splitext(infile)
 if encrypt:
