@@ -58,7 +58,7 @@ except getopt.error as err:
     quit()
 
 if (len(args) == 0) | (len(opts) == 0):
-    print(sys.argv[0], "v1.0\n")
+    print(os.path.basename(sys.argv[0]), "v1.0\n")
     print("Usage: [-d/-e] [-v] <file>\n")
     print("-d / --decrypt: decrypt FNF .dat to .mid")
     print("-e / --encrypt: encrypt .mid to FNF .dat")
