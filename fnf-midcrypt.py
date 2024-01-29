@@ -54,8 +54,8 @@ try:
        elif curArg in ("-v","--verbose"):
           verbose = True
 except getopt.error as err:
-   print(err)
-   quit()
+    print(err)
+    quit()
 
 if (len(args) == 0) | (len(opts) == 0):
     print(sys.argv[0], "v1.0\n")
@@ -64,6 +64,8 @@ if (len(args) == 0) | (len(opts) == 0):
     print("-e / --encrypt: encrypt .mid to FNF .dat")
     print("-v / --verbose: verbose output")
     print("<file>: input file to encrypt or decrypt")
+    if cryptor == False:
+        print("Must use one of either -e/--encrypt or -d/--decrypt")
     quit()
 
 infile = args[0]
